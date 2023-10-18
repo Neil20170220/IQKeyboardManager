@@ -581,6 +581,10 @@ NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
     return enableAutoToolbar;
 }
 
+- (CGRect)keyboardFrame {
+    return _kbFrame;
+}
+
 #pragma mark - Private Methods
 
 /** Getting keyWindow. */
