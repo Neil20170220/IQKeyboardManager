@@ -1509,6 +1509,9 @@ NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
         _animationDuration = 0.25;
     }
     
+    _kbFrame = CGRectZero;
+    [self notifyKeyboardSize:_kbFrame.size];
+    
     //If not enabled then do nothing.
     if ([self privateIsEnabled] == NO)	return;
     
@@ -1593,11 +1596,9 @@ NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
     }
     
     [self restorePosition];
-
+    
     //Reset all values
     _lastScrollView = nil;
-    _kbFrame = CGRectZero;
-    [self notifyKeyboardSize:_kbFrame.size];
     _startingContentInsets = UIEdgeInsetsZero;
     _startingScrollIndicatorInsets = UIEdgeInsetsZero;
     _startingContentOffset = CGPointZero;
