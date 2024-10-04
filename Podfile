@@ -14,7 +14,7 @@ target "DemoSwift" do
 
   pod "SwiftLint"
   pod "IQDropDownTextFieldSwift"
-  pod "IQKeyboardManagerSwift", :path => "."
+  pod "IQSubspecTest", :path => "."
 
   pod "RSKPlaceholderTextView"
 end

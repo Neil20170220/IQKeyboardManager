@@ -1580,8 +1580,8 @@
 				"${PODS_ROOT}/Target Support Files/Pods-DemoSwift/Pods-DemoSwift-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/IQDropDownTextFieldSwift/IQDropDownTextFieldSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardCore/IQKeyboardCore.framework",
-				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardNotification/IQKeyboardNotification.framework",
+				"${BUILT_PRODUCTS_DIR}/IQSubspecTest/IQSubspecTest.framework",
 				"${BUILT_PRODUCTS_DIR}/IQTextInputViewNotification/IQTextInputViewNotification.framework",
 				"${BUILT_PRODUCTS_DIR}/RSKPlaceholderTextView/RSKPlaceholderTextView.framework",
 			);
@@ -1589,8 +1589,8 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQDropDownTextFieldSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardCore.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardNotification.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQSubspecTest.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQTextInputViewNotification.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RSKPlaceholderTextView.framework",
 			);

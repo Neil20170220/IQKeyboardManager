@@ -22,7 +22,7 @@
 // THE SOFTWARE.
 
 import UIKit
-import IQKeyboardManagerSwift
+import IQSubspecTest
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {

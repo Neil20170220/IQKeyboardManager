@@ -22,7 +22,7 @@
 // THE SOFTWARE.
 
 import UIKit
-import IQKeyboardManagerSwift
+import IQSubspecTest
 
 class EnableMode2000ViewController: BaseViewController {
 
