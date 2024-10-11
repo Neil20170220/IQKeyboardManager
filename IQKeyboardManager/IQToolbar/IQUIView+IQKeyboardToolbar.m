@@ -171,7 +171,7 @@ NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
     {
         return self.toolbarPlaceholder;
     }
-    else if ([self respondsToSelector:@selector(placeholder)])
+    else if ([self isKindOfClass:UITextField.class] && [self respondsToSelector:@selector(placeholder)])
     {
         return [(UITextField*)self placeholder];
     }
