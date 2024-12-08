@@ -112,7 +112,11 @@ NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 
         if (navController == parentController)
         {
-            parentContainerViewController = navController.topViewController;
+            if (navController.view.frame.origin.y > 0) {
+                parentContainerViewController = navController;
+            } else {
+                parentContainerViewController = navController.topViewController;
+            }
         }
         else
         {

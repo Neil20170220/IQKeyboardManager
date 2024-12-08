@@ -104,6 +104,8 @@ NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
  */
 @property(nullable, nonatomic, copy) void (^movedDistanceChanged)(CGFloat movedDistance);
 
+@property (nonatomic, readonly) CGRect keyboardFrame;
+
 ///-------------------------
 /// @name IQToolbar handling
 ///-------------------------
