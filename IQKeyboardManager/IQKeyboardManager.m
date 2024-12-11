@@ -694,9 +694,15 @@ NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
         
         kbFrame.origin.y -= keyboardDistanceFromTextField;
         kbFrame.size.height += keyboardDistanceFromTextField;
-
-        kbFrame.origin.y -= _topViewBeginSafeAreaInsets.bottom;
-        kbFrame.size.height += _topViewBeginSafeAreaInsets.bottom;
+        
+        /// comment this two lines to ignore safeAreaInsets
+        ///
+        /// @date 2024-12-11
+        /// @author Shengzhi.Chen
+        /// @version 8.0.0.2
+        ///
+        /// kbFrame.origin.y -= _topViewBeginSafeAreaInsets.bottom;
+        /// kbFrame.size.height += _topViewBeginSafeAreaInsets.bottom;
 
         //Calculating actual keyboard displayed size, keyboard frame may be different when hardware keyboard is attached (Bug ID: #469) (Bug ID: #381) (Bug ID: #1506)
         CGRect intersectRect = CGRectIntersection(kbFrame, keyWindow.frame);
@@ -778,7 +784,13 @@ NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
         CGFloat visibleHeight = CGRectGetHeight(keyWindow.frame)-kbSize.height;
 
         CGFloat topMovement = CGRectGetMinY(textFieldViewRectInRootSuperview)-topLayoutGuide;
-        CGFloat bottomMovement = CGRectGetMaxY(textFieldViewRectInWindow) - visibleHeight + bottomLayoutGuide;
+        
+        /// Ignore `bottomLayoutGuide`
+        ///
+        /// @date 2024-12-11
+        /// @author Shengzhi.Chen
+        /// @version 8.0.0.2
+        CGFloat bottomMovement = CGRectGetMaxY(textFieldViewRectInWindow) - visibleHeight/* + bottomLayoutGuide*/;
         moveUp = MIN(topMovement, bottomMovement);
     }
 
